@@ -35,3 +35,6 @@ Alter table employee_payroll
 Add Gender varchar(1)
 
 Update employee_payroll set Gender ='F' where Name = 'Megha' 
+Update employee_payroll set Gender ='M' where Name = 'Rahul'
+Update employee_payroll set Name = 'Shashikala', Gender='F' where Id=3
+Update employee_payroll set Gender ='M' where Name = 'Prabhu'
