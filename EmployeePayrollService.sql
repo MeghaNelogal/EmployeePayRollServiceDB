@@ -29,3 +29,9 @@ select * from employee_payroll
 Select Salary from employee_payroll where Name = 'Megha'
 
 Select Salary from employee_payroll where StartDate Between CAST('2022-07-25' as date) and GETDATE()
+
+----UC6----
+Alter table employee_payroll 
+Add Gender varchar(1)
+
+Update employee_payroll set Gender ='F' where Name = 'Megha' 
