@@ -45,3 +45,10 @@ select AVG(Salary) from employee_payroll where Gender='F' group by Gender
 select COUNT(Salary) from employee_payroll where Gender='F' group by Gender
 select MAX(Salary) from employee_payroll where Gender='M' group by Gender
 select MIN(Salary) from employee_payroll where Gender='M' group by Gender
+
+----UC8----
+Alter table employee_payroll add PhoneNumber bigint, Address varchar(200) default 'Banglore', Department varchar(100) not null default 'Marketing'
+
+Alter table employee_payroll
+ADD CONSTRAINTS Address
+DEFAULT 'Banglore' for Address;
